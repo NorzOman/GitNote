@@ -3,7 +3,6 @@
 #include "../databaseHandler/sqlite_modern_cpp.h"
 #include <cstdlib>
 #include <ctime>
-#include <utility>
 
 std::string generateToken(int length){
     const std::string chars =
@@ -31,7 +30,7 @@ std::string registerUser(
     if(count > 0) return "-1";
 
     std::string token = generateToken(128);
-    userDb << "INSERT INTO usersCreds (username, password) VALUES (?, ?);"
+    userDb << "INSERT INTO usersCreds (username, password , token ) VALUES (?, ? , ?);"
         << username << password << token;
     return token;
 }
@@ -62,15 +61,16 @@ userInfo userLookup(
     userInfo u;
     std::string username;
     userDb << "select username from usersCreds where token = ?;" << token >> username;
+
     if(username.empty()) return u;
 
     u.validUser = true;
     u.username = username;
 
-    dataDb << "select dname , duuid where token = ?;" << token
-    >> [&](std::string dname , std::string duuid){
-        std::pair<std::string,std::string> note = {dname , duuid};
-        u.notes.push_back(note);
+    dataDb << "SELECT dname, duuid FROM notesData WHERE token = ?;"
+    << token
+    >> [&](std::string dname, std::string duuid) {
+        u.notes.emplace_back(dname, duuid);
     };
 
     return u;

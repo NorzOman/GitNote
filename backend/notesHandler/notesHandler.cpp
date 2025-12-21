@@ -1,6 +1,4 @@
 
-#pragma once
-
 #include "notesHandler.h"
 #include <exception>
 #include <string>
@@ -30,7 +28,7 @@ std::string createNote(
         <<  token  << title << "Hello World!" << uuid;
         return token;
     } catch(std::exception& e){
-        std::cout << e.what() << std::endl;
+        std::cout << "/notesHandler/notesHandler.cpp(createNote) : " << e.what() << std::endl;
         return "-1";
     }
 }
@@ -42,11 +40,11 @@ bool saveNote(
     sqlite::database &dataDb
 ){
     try{
-        dataDb << "insert into notesData(dcontent) values (?) where token = ? and duuid = ?;"
-        << content << token << duuid;
+        dataDb << "update notesData set dcontent=? where token=? and duuid=?;"
+               << content << token << duuid;
         return true;
     } catch(std::exception& e){
-        std::cout << e.what() << std::endl;
+        std::cout  << "/notesHandler/notesHandler.cpp(saveNote) : " << e.what() << std::endl;
         return false;
     }
 }
@@ -58,10 +56,11 @@ std::string viewNote(
 ){
     try{
         std::string contents;
-        dataDb << "select dcontent where token = ? and duuid = ?;" << token << duuid >> contents;
+        dataDb << "select dcontent from notesData where token = ? and duuid = ?;"
+               << token << duuid >> contents;
         return contents;
     } catch(std::exception& e){
-        std::cout << e.what() << std::endl;
+        std::cout<< "/notesHandler/notesHandler.cpp(viewNote) : " << e.what() << std::endl;
         return "Failed to read notes";
     }
 
