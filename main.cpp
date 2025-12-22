@@ -1,3 +1,4 @@
+
 #include <crow/app.h>
 #include <crow/common.h>
 #include <crow/http_request.h>
@@ -97,7 +98,7 @@ int main(){
             userInfo u = userLookup(token,userDb,dataDb);
             crow::json::wvalue json;
             json["username"] = u.username;
-            for (size_t i = 0; i < u.notes.size(); ++i) {
+            for (int i = 0; i < u.notes.size(); ++i) {
                 json["notes"][i]["name"] = u.notes[i].first;
                 json["notes"][i]["uuid"] = u.notes[i].second;
             }
