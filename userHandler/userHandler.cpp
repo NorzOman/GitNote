@@ -4,12 +4,15 @@
 #include <cstdlib>
 #include <ctime>
 
-std::string generateToken(int length){
+std::string generateToken(
+    int length)
+{
     const std::string chars =
         "0123456789"
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         "abcdefghijklmnopqrstuvwxyz";
     std::string token;
+    std::srand(std::time(nullptr));
     for(int i = 0; i < length ; ++i){
         int index = std::rand() % chars.size();
         token += chars[index];
@@ -20,8 +23,8 @@ std::string generateToken(int length){
 std::string registerUser(
     std::string& username,
     std::string& password,
-    sqlite::database& userDb
-){
+    sqlite::database& userDb)
+{
     int count = 0;
     userDb << "select count(*) from usersCreds where username = ?;"
     << username
@@ -38,8 +41,8 @@ std::string registerUser(
 std::string loginUser(
     std::string &username,
     std::string &password,
-    sqlite::database &userDb
-){
+    sqlite::database &userDb)
+{
     int count = 0;
     userDb << "select count(*) from usersCreds where username = ? and password = ?;"
     << username << password
@@ -53,11 +56,12 @@ std::string loginUser(
     return token;
 }
 
+// take the token , along with the user databse and the data database to do user lookup
 userInfo userLookup(
     std::string& token,
     sqlite::database& userDb,
-    sqlite::database& dataDb
-){
+    sqlite::database& dataDb)
+{
     userInfo u;
     std::string username;
     userDb << "select username from usersCreds where token = ?;" << token >> username;
@@ -72,11 +76,14 @@ userInfo userLookup(
     >> [&](std::string dname, std::string duuid) {
         u.notes.emplace_back(dname, duuid);
     };
-
     return u;
 }
 
-bool verifyToken(std::string &token, sqlite::database &userDb){
+// take input as token , verify if the token exists in the user database
+bool verifyToken(
+    std::string &token,
+    sqlite::database &userDb)
+{
     int count = 0;
     userDb << "select count(*) from usersCreds where token = ?;" << token >> count;
     if(count == 0) return false;

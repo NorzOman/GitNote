@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Me</title>
+    </head>
+    <body>
+        <script>
+            (async () => {
+                const token = localStorage.getItem("token");
+
+                if (!token) {
+                    console.log("No token found in localStorage");
+                    return;
+                }
+
+                console.log("Token from localStorage:", token);
+
+                const payload = { token };
+                console.log("JSON sent:", JSON.stringify(payload));
+
+                try {
+                    const res = await fetch("http://localhost:5000/me", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                    });
+
+                    console.log("HTTP Status:", res.status);
+
+                    const data = await res.json();
+                    console.log("Response JSON:", data);
+
+                    if (data.data && data.data.error) {
+                        console.log("API error:", data.data.error);
+                        return;
+                    }
+
+                    console.log("Username:", data.username);
+
+                    if (data.notes && Array.isArray(data.notes)) {
+                        console.log("Notes:");
+                        data.notes.forEach((note, i) => {
+                            console.log(`  ${i + 1}.`, note);
+                        });
+                    } else {
+                        console.log("No notes found");
+                    }
+                } catch (err) {
+                    console.log("Network or server error:", err);
+                }
+            })();
+        </script>
+    </body>
+</html>

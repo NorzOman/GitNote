@@ -10,6 +10,7 @@ std::string generateUUID(int length){
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         "abcdefghijklmnopqrstuvwxyz";
     std::string token;
+    std::srand(std::time(nullptr));
     for(int i = 0; i < length ; ++i){
         int index = std::rand() % chars.size();
         token += chars[index];
@@ -26,7 +27,7 @@ std::string createNote(
     try{
         dataDb << "insert into notesData(token , dname , dcontent , duuid) values (?,?,?,?);"
         <<  token  << title << "Hello World!" << uuid;
-        return token;
+        return uuid;
     } catch(std::exception& e){
         std::cout << "/notesHandler/notesHandler.cpp(createNote) : " << e.what() << std::endl;
         return "-1";

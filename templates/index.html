@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <body>
+        <script>
+            const token = localStorage.getItem("token");
+
+            if (token) {
+                console.log("Token exists:", token);
+            } else {
+                console.log("No token found");
+                window.location.href = "login.html";
+            }
+        </script>
+    </body>
+</html>
