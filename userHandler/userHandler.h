@@ -14,6 +14,7 @@ struct userInfo{
 };
 
 std::string registerUser(
+    std::string& email,
     std::string& username,
     std::string& password,
     sqlite::database& userDb

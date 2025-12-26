@@ -3,6 +3,7 @@
 #include "../databaseHandler/sqlite_modern_cpp.h"
 #include <cstdlib>
 #include <ctime>
+#include <exception>
 
 std::string generateToken(
     int length)
@@ -21,20 +22,28 @@ std::string generateToken(
 }
 
 std::string registerUser(
+    std::string& email,
     std::string& username,
     std::string& password,
     sqlite::database& userDb)
 {
     int count = 0;
-    userDb << "select count(*) from usersCreds where username = ?;"
-    << username
-    >> count;
+    userDb << "select count(*) from usersCreds where username = ?;" << username >> count;
+
+    if(count > 0) return "-1";
+
+
+    count = 0;
+    userDb << "select count(*) from usersCreds where email = ?;" << email  >> count;
 
     if(count > 0) return "-1";
 
     std::string token = generateToken(128);
-    userDb << "INSERT INTO usersCreds (username, password , token ) VALUES (?, ? , ?);"
-        << username << password << token;
+    try{
+        userDb << "INSERT INTO usersCreds (email, username, password , token ) VALUES (?, ?, ?, ?);" << email << username << password << token;
+    } catch(const std::exception& e){
+        std::cout << "[userhandler.cpp] " << e.what() << std::endl;
+    }
     return token;
 }
 
