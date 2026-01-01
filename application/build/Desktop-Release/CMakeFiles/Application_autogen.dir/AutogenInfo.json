@@ -1,0 +1,189 @@
+{
+	"BUILD_DIR" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/Application_autogen",
+	"CMAKE_BINARY_DIR" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/oman/Desktop/GitNote/Application",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/oman/Desktop/GitNote/Application/CMakeLists.txt",
+		"/home/oman/Desktop/GitNote/Application/build/Desktop-Release/.qtc/package-manager/auto-setup.cmake",
+		"/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/3.31.6/CMakeSystem.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake",
+		"/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linux.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeCXXInformation.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake",
+		"/usr/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/share/cmake-3.31/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake",
+		"/usr/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake",
+		"/usr/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake",
+		"/usr/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake",
+		"/usr/share/cmake-3.31/Modules/Linker/GNU.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake",
+		"/usr/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/usr/share/cmake-3.31/Modules/CMakeParseArguments.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/oman/Desktop/GitNote/Application",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/Application_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "Application_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/oman/Desktop/GitNote/Application/authHandler/authHandler.h",
+			"MU",
+			"S7WZWD6MZ7/moc_authHandler.cpp",
+			null
+		],
+		[
+			"/home/oman/Desktop/GitNote/Application/dashboardHandler/dashboardHandler.h",
+			"MU",
+			"7DKJ3UXAGO/moc_dashboardHandler.cpp",
+			null
+		],
+		[
+			"/home/oman/Desktop/GitNote/Application/editorHandler/editorHandler.h",
+			"MU",
+			"REWJU6RIIR/moc_editorHandler.cpp",
+			null
+		],
+		[
+			"/home/oman/Desktop/GitNote/Application/loginHandler/loginHandler.h",
+			"MU",
+			"GEK3ACQO7T/moc_loginHandler.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/Application_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/Application_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/c++/14",
+		"/usr/include/x86_64-linux-gnu/c++/14",
+		"/usr/include/c++/14/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/14/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/bin/g++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/Application_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/Application_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/Application_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/oman/Desktop/GitNote/Application/authHandler/authHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oman/Desktop/GitNote/Application/dashboardHandler/dashboardHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oman/Desktop/GitNote/Application/editorHandler/editorHandler.cpp",
+			"MU",
+			null
+		],
+		[ "/home/oman/Desktop/GitNote/Application/gitnote.cpp", "MU", null ],
+		[
+			"/home/oman/Desktop/GitNote/Application/loginHandler/loginHandler.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

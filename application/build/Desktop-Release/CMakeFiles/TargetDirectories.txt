@@ -1,0 +1,5 @@
+/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/Application.dir
+/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/edit_cache.dir
+/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/rebuild_cache.dir
+/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/Application_autogen_timestamp_deps.dir
+/home/oman/Desktop/GitNote/Application/build/Desktop-Release/CMakeFiles/Application_autogen.dir
